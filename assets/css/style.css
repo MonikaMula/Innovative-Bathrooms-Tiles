@@ -8,5 +8,15 @@ border: none;
 
 body {
     font-family: Cinzel;
-    font-weight: 300;
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: Roboto+Mono;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
 }
