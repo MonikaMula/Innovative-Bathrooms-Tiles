@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Mono:wght@100&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+border: none;
+}
+
 body {
-    font-family: Arial;
+    font-family: Cinzel;
+    font-weight: 300;
 }
