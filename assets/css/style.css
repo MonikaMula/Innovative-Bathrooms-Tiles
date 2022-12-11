@@ -55,3 +55,48 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* images leyout */
+.container {
+    width: 100%
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.3%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.amira {
+    width: 25%;
+    height: auto;
+}
+
+.site-header {
+    margin-left: 2rem;
+}
+
+.section-header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width) {
+    .col-third,
+    .col-half {
+        width:100%;
+    }
+}
+
