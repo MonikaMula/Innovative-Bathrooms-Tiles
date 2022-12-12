@@ -80,10 +80,62 @@ h1, h2 {
     width: 50%;
 }
 
-.amira {
-    width: 45%;
+.mirrors {
+    width: 50%;
     height: auto;
 }
+.amira {
+    width: 80%;
+    height: 100%;
+}
+
+.shower {
+    width: 90%;
+    height: auto;
+}
+.pexels3 {
+    width: 50%;
+    height: auto;
+}
+
+.bathroom {
+    width: 90%;
+    height: 100%; 
+}
+
+.pexels-max-vakhtbovych {
+    width: 50%;
+    height: auto;
+}
+ 
+/* Tiles */
+
+.tile1 {
+    width: 50%;
+    height: auto;  
+}
+
+.tile2 {
+    width: 50%;
+    height: auto; 
+}
+
+.tile6 {
+    width: 50%;
+    height: auto;
+}
+
+.tile7 {
+    width: 50%;
+    height: auto;
+}
+
+.tile9 {
+    width: 50%;
+    height: auto;
+}
+
+/* headers*/
 
 .site-header {
     margin-left: 2rem;
