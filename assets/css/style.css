@@ -12,6 +12,24 @@ body {
     color: #3a3a3a;
 }
 
+/* headers*/
+
+.site-header {
+    margin-left: 2rem;
+}
+
+.section-header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width) {
+    .col-third,
+    .col-half {
+        width:100%;
+    }
+}
+
 /* headings and logo */
 
 h1, h2 {
@@ -147,21 +165,91 @@ h1, h2 {
     padding: 0rem;
 }
 
-/* headers*/
+/* Contact Us */
 
-.site-header {
-    margin-left: 2rem;
+.body {
+    font-size: 14px;
 }
 
-.section-header {
-    text-align: center;
-    padding: 2rem 0;
+.container {
+    width: 80%;
+    margin: 5% auto;
 }
 
-@media screen and (max-width) {
-    .col-third,
-    .col-half {
-        width:100%;
-    }
+.contact-box {
+    display: flex;
 }
 
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+}
+
+container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color:olive;
+}
+
+button {
+    width: 100px;
+    border: none;
+    outline: none;
+    color: olive;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.contact-left h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td :first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
