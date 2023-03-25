@@ -245,11 +245,3 @@ button {
     font-weight: 600;
     margin-bottom: 30px;
 }
-
-tr td :first-child {
-    padding-right: 20px;
-}
-
-tr td {
-    padding-top: 20px;
-}
