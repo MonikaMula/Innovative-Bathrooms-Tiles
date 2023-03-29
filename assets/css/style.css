@@ -16,6 +16,9 @@ ul {
     font-weight: bold;
     text-decoration: underline;
 }
+body , html {
+    overflow-x: hidden;
+}
 /* Navigation Bar */
 .navbar {
     position: absolute;
@@ -92,7 +95,18 @@ section {
     flex-direction: column;
     align-items: center;
 }
-
+.aboutus .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+p {
+    color: black;
+    padding: 0px 40px;
+}
 /* Display on a Mobile */
 @media only screen and (max-width:850px){
     .navbar {
