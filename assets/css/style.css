@@ -5,11 +5,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 header {
     width: 100vw;
     height: 100vh;
     background-image: url(../css/sanibell-smiley-sink.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: black;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 400px;
+    height: 2px;
+    background-color: darkslategray;
+    margin: auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 5vmin;
 }
