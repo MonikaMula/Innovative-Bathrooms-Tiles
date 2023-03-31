@@ -72,7 +72,7 @@ header {
 
 /* About Us */
 section {
-    width: 50%;
+    width: 100%;
     margin: 50px auto;
 }
 .title {
@@ -130,6 +130,12 @@ p {
 /* Gallery */
 #pictures {
     clear: both;
+    line-height: 0;
+    column-count:4;
+    column-gap: 2px;
+}
+#pictures > img {
+    width: 100%;
 }
 /*.section {
     width: 50%;
