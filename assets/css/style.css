@@ -1,229 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Mono:wght@100&display=swap');
-
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6;
+    color: rgb(103, 62, 142); /* Set text color to purple */
 }
-a {
-    text-decoration: none;
-}
-ul {
-    list-style: none;
-}
-.active {
-    color:rebeccapurple;
-    font-weight: bold;
-    text-decoration: underline;
-}
-body , html {
-    overflow-x: hidden;
-}
-/* Navigation Bar */
+
+/* Navigation Bar Styles */
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding: 20px;
-    color: black;
-}
-.nav-links {
-    display: flex;
     align-items: center;
+    background-color: #333;
+    padding: 1rem;
 }
-.nav-links li {
-    margin:  0 50px;
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
 }
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 1rem;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navbar .nav-links li.active a {
+    font-weight: bold;
+}
+
+/* Header Section Styles */
 header {
-    width: 100vw;
+    background: url('../css/sanibell-smiley-sink.jpg') no-repeat center center/cover;
     height: 100vh;
-    background-image: url(../css/sanibell-smiley-sink.jpg);
-    background-position: center;
-    background-size: cover;
+    color: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.header-content {
-    margin-bottom: 77px;
-    color: black;
+    align-items: center;
     text-align: center;
-}
-.header-content h2 {
-    font-size: 4vmin;
-    margin-top: 5px;
-    margin-bottom: 2px;
-}
-.line {
-    width: 377px;
-    height: 2px;
-    background-color: darkslategray;
-    margin: auto;
-    border-radius: 5px;
-}
-.header-content h1 {
-    font-size: 5vmin;
-    margin-top: 2px;
-    margin-bottom: 5px;
+    flex-direction: column;
+    position: relative; /* Added relative positioning to the header */
 }
 
-/* About Us */
-section {
+header .header-content {
+    position: relative;
     width: 100%;
-    margin: 50px auto;
-}
-.title {
-    text-align: center;
-    font-size: 2vmin;
-    color: black;
-}
-.row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    background-color: none;
-}
-.row .col img {
-    width: 80%;
-}
-.row .col {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+header .header-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(103, 62, 142); /* Changed color to purple */
+    position: relative;
+    top: -30px; /* Adjusted to move up */
+}
+
+header .header-content h1 {
+    font-size: 3rem;
+    color: rgb(103, 62, 142); /* Changed color to purple */
+    position: relative;
+    top: -50px; /* Adjusted to move up */
+}
+
+/* About Us Section Styles */
+.aboutus {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: rgb(103, 62, 142); /* Set text color to purple */
+}
+
+.aboutus .title h2 {
+    font-size: 2rem;
+}
+
 .aboutus .row {
-    margin-top: 50px;
-}
-h4 {
-    font-size: 3vmin;
-    color: black;
-    margin: 20px auto;
-}
-p {
-    color: black;
-    padding: 0px 40px;
-}
-
-/*.gallery {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./style.css/);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-}
-.gallery-story {
-    width: 60%;
-    padding: 50px;
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}*/
-
-/* Gallery */
-#pictures {
-    clear: both;
-    line-height: 0;
-    column-count:4;
-    column-gap: 2px;
-}
-#pictures > img {
-    width: 100%;
-}
-/*.section {
-    width: 50%;
-    margin: 50px auto;
-}*/
-.gallery-story {
-    text-align: center;
-    font-size: 2vmin;
-    color: black;
-}
-.gallery-story h2 {
-    font-size: 3vmin;
-    /* margin: 50px;*/
-}
-.gallery-story .line {
-    margin-bottom: 50px;
-}
-
-
-
-
-
-/*.gallery-story p {
-    color: black;
-}*/
-
-/*.projects .rows .col {
-    width: 50%;
-}*/
-
-/*.projects .projects-gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-}*/
-/*.content-col {
-    width: 40%;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
-.content-col .line {
-    margin-left: -1px;
-}
-.content-col p {
-    padding: 0;
-    margin: 30px auto;
-}
-.projects-col {
-    width: 60%;
-}
-.content-col h2 {
-    font-size: 7vmin;
-    color: black;
-}
-.projects-gallery img {
-    max-width: 50px;
-    margin: 10px;
-}*/
 
-.footer {
+.aboutus .col {
+    flex-basis: 45%;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.aboutus .col img {
     width: 100%;
-    height: 100px;
-    padding: 20px 80px;
-    margin: 0;
-    background-color:cadetblue;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Gallery Section Styles */
+.gallery {
+    padding: 2rem;
+    text-align: center;
+    color: rgb(103, 62, 142); /* Set text color to purple */
+}
+
+.gallery .gallery-story h2 {
+    font-size: 2rem;
+}
+
+.gallery #pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.gallery #pictures img {
+    width: 30%;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: rgb(103, 62, 142); /* Set text color to purple */
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
-.footer p {
-    color: black;
-    margin: 20px auto;
-    padding: 20px auto;
+
+footer .contact-info p {
+    margin: 0.5rem 0;
 }
 
-/* Display on a Mobile */
-@media only screen and (max-width:850px){
-    .navbar {
-        padding: 0;
-    }
-    .logo {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-    }
-    .nav-links {
+footer .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Navigation Bar */
+    .navbar .nav-links {
         flex-direction: column;
-        width: 500%;
-        height: 5%;
+        align-items: center;
     }
-    .nav-links li {
-        margin: 30px auto;
+
+    .navbar .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    /* Header Section */
+    header {
+        height: 40vh;
+    }
+
+    header .header-content h2 {
+        font-size: 1.5rem;
+        top: -20px; /* Adjusted for smaller screens */
+    }
+
+    header .header-content h1 {
+        font-size: 2rem;
+        top: -30px; /* Adjusted for smaller screens */
+    }
+
+    /* About Us Section */
+    .aboutus .row {
+        flex-direction: column;
+    }
+
+    .aboutus .col {
+        flex-basis: 100%;
+    }
+
+    /* Gallery Section */
+    .gallery #pictures img {
+        width: 100%;
     }
 }
