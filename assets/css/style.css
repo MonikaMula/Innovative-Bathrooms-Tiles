@@ -44,7 +44,7 @@ body {
 
 /* Header Section Styles */
 header {
-    background: url('../css/sanibell-smiley-sink.jpg') no-repeat center center/cover;
+    background: url('../images/sanibell-smiley-sink.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -84,7 +84,7 @@ header .header-content h1 {
 .aboutus {
     padding: 2rem;
     text-align: center;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0); /* Gradient background */
     color: rgb(103, 62, 142); /* Set text color to purple */
 }
 
@@ -132,7 +132,7 @@ header .header-content h1 {
 .gallery #pictures img {
     width: 30%;
     height: auto;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     transition: transform 0.3s ease;
 }
 
@@ -140,57 +140,27 @@ header .header-content h1 {
     transform: scale(1.05);
 }
 
-/* Contact Form Section Styles */
-.contact-form-section {
+/* Contact Section Styles */
+.contact {
     padding: 2rem;
-    background-color: #f4f4f4;
     text-align: center;
+    background-color: #f4f4f4;
+    color: rgb(103, 62, 142); /* Set text color to purple */
 }
 
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-container h2 {
+.contact h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: rgb(103, 62, 142); /* Use the same purple color */
 }
 
-.contact-form-container label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: rgb(103, 62, 142); /* Use the same purple color */
+.contact .contact-info {
+    margin: 0 auto;
+    width: fit-content;
 }
 
-.contact-form-container input,
-.contact-form-container textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form-container button {
-    background-color: rgb(103, 62, 142); /* Use the same purple color */
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
+.contact .contact-info p {
     font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form-container button:hover {
-    background-color: #6a41a2; /* Darker purple for hover effect */
+    margin: 0.5rem 0;
 }
 
 /* Footer Section Styles */
@@ -253,13 +223,61 @@ footer .social-links a:hover {
     }
 
     /* Gallery Section */
-    .gallery #pictures {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .gallery #pictures img {
         width: 90%;
         margin: 0.5rem 0;
     }
+}
+
+/* Contact Form Section Styles */
+.contact-form-section {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(103, 62, 142); /* Use the same purple color */
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(103, 62, 142); /* Use the same purple color */
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form-container button {
+    background-color: rgb(103, 62, 142); /* Use the same purple color */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #6a41a2; /* Darker purple for hover effect */
 }
